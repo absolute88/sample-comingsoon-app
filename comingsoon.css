@@ -1,0 +1,84 @@
+
+body, html {
+  background: DARKSLATEGREY ;
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  padding: 4% 2%;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+.box {
+  flex: 1;
+  overflow: hidden;
+  transition: .5s;
+  margin: 0 2%;
+  box-shadow: 0 20px 30px rgba(0,0,0,.1);
+  line-height: 0;
+}
+
+.box > img {
+  width: 200%;
+  height: calc(100% - 10vh);
+  object-fit: cover; 
+  transition: .5s;
+   opacity: 0.6;
+}
+
+.box > span {
+  font-size: 3.8vh;
+  display: block;
+  text-align: center;
+  height: 10vh;
+  line-height: 2.6;
+  color: #FFFDFD;
+}
+
+.box:hover { flex: 1 1 50%; }
+.box:hover > img {
+  width: 100%;
+  height: 100%;
+}
+ /*#cspio-socialprofiles a {
+    color: #ffffff;
+*/
+.topleft {
+  color: #FFFDFD;
+  position: absolute;
+  top: 0;
+  left: 16px;
+}
+
+.bottomleft {
+  color: #FFFDFD;
+  position: absolute;
+  bottom: 0;
+  left: 16px; 
+}
+
+.middle {
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+hr {
+  
+  margin: auto;
+  width: 40%;
+  
+}
+a {
+   color: #ffffff;
+}
+#social a + a {
+padding-left: 2em;
+}
